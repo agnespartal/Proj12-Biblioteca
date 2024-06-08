@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Biblioteca</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aluno">Aluno</string>
+    <string name="aluguel">Aluguel</string>
+    <string name="ra">RA</string>
+    <string name="codigo_exemplar">Codigo Exemplar</string>
+    <string name="data_retirada">Data Retirada</string>
+    <string name="data_devolu_o">Data Devolução</string>
+    <string name="inserir">Inserir</string>
+    <string name="buscar">Buscar</string>
+    <string name="excluir">Excluir</string>
+    <string name="listar">Listar</string>
+    <string name="editar">Editar</string>
+    <string name="e_mail">E-mail</string>
+    <string name="nome">Nome</string>
+</resources>

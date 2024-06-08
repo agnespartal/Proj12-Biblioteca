@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentAluguel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AluguelFragment">
+
+    <EditText
+        android:id="@+id/etRaAlunoAluguel"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="29dp"
+        android:ems="10"
+        android:hint="@string/ra"
+        android:inputType="number"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toStartOf="@+id/etCodigoExemplar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCodigoExemplar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="39dp"
+        android:ems="10"
+        android:hint="@string/codigo_exemplar"
+        android:inputType="number"
+        android:importantForAutofill="no"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etRaAlunoAluguel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etRaAlunoAluguel" />
+
+    <EditText
+        android:id="@+id/etDataRetirada"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:hint="@string/data_retirada"
+        android:inputType="date"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="@+id/btnBuscarAluguel"
+        app:layout_constraintStart_toStartOf="@+id/btnExcluirAluguel"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigoExemplar" />
+
+    <EditText
+        android:id="@+id/etDataDevolucao"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="@string/data_devolu_o"
+        android:inputType="date"
+        android:importantForAutofill="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDataRetirada" />
+
+    <Button
+        android:id="@+id/btnInserirAluguel"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="3dp"
+        android:text="@string/inserir"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnBuscarAluguel"
+        app:layout_constraintStart_toStartOf="@+id/btnExcluirAluguel" />
+
+    <Button
+        android:id="@+id/btnBuscarAluguel"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/buscar"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditarAluguel"
+        app:layout_constraintTop_toTopOf="@+id/btnEditarAluguel" />
+
+    <Button
+        android:id="@+id/btnExcluirAluguel"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="46dp"
+        android:text="@string/excluir"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnListarAluguel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnListarAluguel"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/listar"
+        app:layout_constraintStart_toStartOf="@+id/btnBuscarAluguel"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarAluguel" />
+
+    <TextView
+        android:id="@+id/tvListaAluguel"
+        android:layout_width="296dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="75dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEditarAluguel"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="41dp"
+        android:text="@string/editar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
